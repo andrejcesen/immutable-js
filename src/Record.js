@@ -41,6 +41,10 @@ function throwOnInvalidDefaultValues(defaultValues) {
       'Can not call `Record` with a non-object as default values. Use a plain javascript object instead.'
     );
   }
+
+  if (defaultValues === '__nonsense__') {
+    throw new Error('Passed a __nonsense__ value.');
+  }
 }
 
 export class Record {
