@@ -43,7 +43,7 @@ function throwOnInvalidDefaultValues(defaultValues) {
   }
 
   if (defaultValues === '__nonsense__') {
-    throw new Error('Passed a __nonsense__ value.');
+    throw new Error('Passed a __nonsense__ value.2');
   }
 }
 
